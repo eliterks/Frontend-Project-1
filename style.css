@@ -298,5 +298,5 @@ video {
 }
 
 .card:hover .overlay {
-    opacity: 1;
+    opacity: 2;
 }
