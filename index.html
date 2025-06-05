@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Project 1</title>
+</head>
+<body>
+    <div id="nav">        
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="not loaded">
+        <h4>TopTracer Range</h4>
+        <h4>golf lessons</h4>
+        <h4>adventure golf</h4>
+        <h4>cafe</h4>
+        <h4>events</h4>
+    </div> 
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <video autoplay loop muted play poster="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/video-bg.jpg?strip=all&lossy=1&sharp=1&ssl=1">
+        <source src="hero.mp4" 
+        type="video/mp4">
+    </video>
+    <!-- Ek hi main mein hum multiple pages bnayenge aur each page 
+    ko 'vh' mein height denge aur main ko height isliye nhi de rhe taki usme
+    hum locomotive lga ske -->
+    <div id="main">
+        <div id="page1">
+            <h1> EAT. DRINK. PLAY. </h1>
+            <h2>Welcome to Sidcup Family Golf!</h2>
+            <p> Sidcup Family Golf is a Toptracer driving range and crazy golf venue in
+                Sidcup, South East London. Passionate about technology, player 
+                development and making golf fun and accessible to everyone.</p>
+        <!-- Page2 just niche hoga page1 ke by scrolling -->
+        </div>
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>TOPTRACER RANGE</h4>
+                    <h4>GOLF LESSONS</h4>
+                    <h4>ADVENTURE GOLF</h4>     
+                    <h4>CAFE </h4>
+                    <h4>CRAZY FUN</h4>
+                    <!-- Duplicating above so that there is no blankness when the next iteration comes -->
+                    <h4>TOPTRACER RANGE</h4>
+                    <h4>GOLF LESSONS</h4>
+                    <h4>ADVENTURE GOLF</h4>     
+                    <h4>CAFE </h4>
+                    <h4>CRAZY FUN</h4>
+                </div>
+            </div>
+            <div id="page3">
+                <div id="about">
+                <h3>ABOUT US</h3>
+                <p>Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology. Complimented by a practice green and bunker, coffee shop and American Golf Store. There truly is something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.</p>
+                <h4>Please note: we are a cashless venue. The range closes at 10pm with last balls at 9pm.</h4>
+                </div>
+                <div id="img1">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-1-768x511.jpg?strip=all&lossy=1&sharp=1&ssl=1" alt="img1">
+                </div>
+                <div id="img2">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-2-768x511.jpg?strip=all&lossy=1&sharp=1&ssl=1" alt="img2">
+                </div>
+            </div>
+            <div id="card-box">
+                <div class="card" data-tilt data-tilt-reverse="true" id="card1">
+                    <h3>TopTracer Range</h3>
+                    <div class="overlay" data-tilt data-tilt-reverse="true" id="o1">
+                        <h4>TopTracer Range</h4>
+                        <p>Our range delivers the same ball-tracking technology that traces the shots of the game's best players on TV.</p>
+                        <p>Toptracer Range technology offers a fun, engaging, tech-driven experience that appeals to seasoned players, range rivals, friends, family members, and even first-time golfers.</p>
+                    </div>
+                </div>
+                <div class="card" data-tilt data-tilt-reverse="true" id="card2">
+                    <h3>Adventure Golf</h3>
+                    <div class="overlay" data-tilt data-tilt-reverse="true" id="o2">
+                        <h4>Adventure Golf</h4>
+                        <p>Adventure awaits you!</p>
+                        <p>Become a Jurassic explorer as you delve into the land of the dinosaurs! Putt your way through prehistoric landscape,
+                            cascading waterfalls and meet some dinosaur friends along the way.</p>
+                    </div>
+                </div>
+                <div class="card" data-tilt data-tilt-reverse="true" id="card3">
+                    <h3>Golf Lessons</h3>
+                    <div class="overlay" data-tilt data-tilt-reverse="true" id="o3">
+                        <h4>Golf Lessons</h4>
+                        <p>Passionate about player development, whether you are new to the game or an aspiring pro, 
+                        we offer both group and individual lessons tailored to you with the sole focus of helping you reach your goals.</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        </div>
+        </div>
+        
+    </div>
+    <!-- body tag ke close hone se just upr wali line mein daalna h 
+    sbse phle gsap (just copy script tag </>), scrolltrigger , script.js linking-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="./vanilla-tilt.js"></script>
+</body>
+</html>
